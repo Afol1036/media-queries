@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Estilos generales y para móviles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu li {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* Media Queries utilizando la sintaxis de rango */
+
+/* Tablets: ancho entre 768px y 1023px */
+@media (width >= 768px) and (width <= 1023px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu li a {
+        padding: 10px 20px;
+    }
+}
+
+/* Desktops: ancho mayor a 1023px */
+@media (width > 1023px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .menu li a {
+        padding: 15px 30px;
+    }
+}
