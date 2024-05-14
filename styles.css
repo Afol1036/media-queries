@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Estilos generales y para móviles */
 body {
     font-family: Arial, sans-serif;
@@ -72,5 +74,28 @@ body {
 
     .menu li a {
         padding: 15px 30px;
+    }
+}
+
+/* Celulares: ancho menor a 768px */
+@media (width < 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        text-align: center;
     }
 }
